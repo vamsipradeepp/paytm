@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YourBrand — Modern Responsive Site</title>
+  <meta name="description" content="Modern responsive website template with sticky navbar, smooth scrolling, animations, and contact form." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="#home">YourBrand</a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+      <ul id="primary-navigation" class="nav-list" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero Section -->
+    <section id="home" class="section hero reveal-on-scroll">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Build something remarkable.</h1>
+          <p>Clean, modern design with smooth interactions. Fully responsive and accessible.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#services">Explore services</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="glassy-card">
+            <div class="dots"></div>
+            <div class="graph"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal-on-scroll">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>We craft responsive experiences with attention to performance, accessibility, and aesthetics.</p>
+          <ul class="checklist">
+            <li>Responsive-first layouts</li>
+            <li>Accessible components</li>
+            <li>Modern animations</li>
+            <li>Clean, maintainable code</li>
+          </ul>
+        </div>
+        <div class="about-media">
+          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop" alt="Team collaborating around a laptop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section reveal-on-scroll">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="card-grid">
+          <article class="card service-card">
+            <div class="icon">⚡</div>
+            <h3>Web Development</h3>
+            <p>High-quality, robust websites with modern tooling and best practices.</p>
+          </article>
+          <article class="card service-card">
+            <div class="icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Intuitive interfaces focused on clarity, flow, and delight.</p>
+          </article>
+          <article class="card service-card">
+            <div class="icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Mobile-first layouts that look great on any device.</p>
+          </article>
+          <article class="card service-card">
+            <div class="icon">🚀</div>
+            <h3>Performance</h3>
+            <p>Optimized assets and interactions for speed and smoothness.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section reveal-on-scroll">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>Have a project in mind? Let's talk.</p>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <small class="error" id="name-error"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <small class="error" id="email-error"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error" id="message-error"></small>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <div class="form-status" aria-live="polite" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> YourBrand. All rights reserved.</p>
+      <ul class="socials" aria-label="Social links">
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script defer src="script.js"></script>
+  <noscript>
+    <p class="no-js">JavaScript is disabled; animations and menu are simplified.</p>
+  </noscript>
+</body>
+</html>
