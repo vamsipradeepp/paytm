@@ -15,6 +15,7 @@ header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 20px;
+  position: relative;
 }
 img {
   height: 350px;
@@ -43,4 +44,19 @@ button {
 }
 label {
   color: black;
+}
+
+/* Corner header images */
+.corner-image {
+  position: absolute;
+  top: 8px;
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+}
+.corner-left {
+  left: 8px;
+}
+.corner-right {
+  right: 8px;
 }
