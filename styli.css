@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: yellow;
+}
+header {
+  font-size: xx-large;
+  font-style: oblique;
+
+  text-align: center;
+
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+img {
+  height: 350px;
+  width: 750px;
+}
+.main-container {
+  display: flex;
+  gap: 20px;
+}
+.enquiry-form {
+  padding: 50px;
+  font-size: 30px;
+}
+
+#checkStatus:hover {
+  background-color: #318166;
+  color: white;
+}
+button {
+  border: none;
+  background-color: #7fffd4;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+label {
+  color: black;
+}
+
+/* Page corner images */
+.page-corner {
+  position: fixed;
+  top: 8px;
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+  z-index: 1000;
+}
+.top-left { left: 8px; }
+.top-right { right: 8px; }

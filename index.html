@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AP FREE BUS</title>
+    <link rel="stylesheet" href="styli.css" />
+  </head>
+  <body>
+    <img src="image/logo-left.png" alt="Left logo" class="page-corner top-left" />
+    <img src="image/logo-right.png" alt="Right logo" class="page-corner top-right" />
+    <header>AP FREE BUS FOR WOMEN</header>
+    <div class="main-container">
+      <img src="image/apbus.jpeg" alt="AP Free Bus" />
+      <div class="enquiry-form">
+        <p>Questions from Conductor</p>
+        <label>
+          <input type="checkbox" id="isseatavailable" /> Is seat available?
+        </label>
+        <br /><br />
+        <label>
+          <input type="checkbox" id="areyoulady" /> Are you lady?
+        </label>
+        <br /><br />
+        <label>
+          <input type="checkbox" id="haveaadhar" /> Do you have Aadhaar?
+        </label>
+        <br /><br />
+        <button id="checkStatus">Check</button>
+        <p id="status" aria-live="polite"></p>
+      </div>
+    </div>
+    <script src="busspass.js"></script>
+  </body>
+</html>
